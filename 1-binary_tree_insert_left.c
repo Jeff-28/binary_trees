@@ -14,13 +14,10 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	binary_tree_t *node = NULL;
 	binary_tree_t *temp = NULL;
 
-	printf("prenull\n");
 	if(parent == NULL)
 	        return NULL;
 
-	printf("premake\n");
 	node = binary_tree_node(parent, value);
-	printf("we made it\n");
 	if (parent->left == NULL)
 	{
 		parent->left = node;
