@@ -3,9 +3,10 @@
 #include "binary_trees.h"
 
 /**
- * main - Entry point
+ * binary_tree_delete - deletes an entire binary tree
+ * @tree: pointer to the root node of the tree to delete
  *
- * Return: Always 0 (Success)
+ * Return: nothing
  */
 void binary_tree_delete(binary_tree_t *tree)
 {

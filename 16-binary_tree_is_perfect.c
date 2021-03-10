@@ -25,7 +25,7 @@ int max(int a, int b)
 }
 
 /**
- * binary_tree_height - measures the height of a binary
+ * tree_height - measures the height of a binary
  * @tree: a pointer to the root node of the tree to measure the height
  *
  * Return: the height of the binary tree
@@ -53,7 +53,8 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 		return (1);
 	if (tree_height(tree->left) == tree_height(tree->right))
 	{
-		if (binary_tree_is_perfect(tree->left) && binary_tree_is_perfect(tree->right))
+		if (binary_tree_is_perfect(tree->left) &&
+				binary_tree_is_perfect(tree->right))
 			return (1);
 	}
 	return (0);
